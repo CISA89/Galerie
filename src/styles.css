@@ -1,0 +1,96 @@
+/* src/styles.css */
+
+/* Grundlegende Reset- und Basisstile */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Stile für die App-Komponente */
+.App {
+  text-align: center;
+  padding: 20px;
+}
+
+.App h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #4caf50; /* Grüner Farbton */
+}
+
+.App h2 {
+  font-size: 1.5em;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Stile für die Gallery-Komponente */
+.Gallery {
+  padding: 20px;
+}
+
+/* Stile für die Galerie-Grid */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Stile für einzelne Galerie-Elemente */
+.gallery-item {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.gallery-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.gallery-item h2 {
+  font-size: 1.2em;
+  margin: 10px;
+  color: #4caf50;
+}
+
+.gallery-item p {
+  font-size: 1em;
+  margin: 0 10px 10px 10px;
+  color: #666;
+}
+
+/* Responsive Design für kleinere Bildschirme */
+@media (max-width: 600px) {
+  .App h1 {
+    font-size: 2em;
+  }
+
+  .App h2 {
+    font-size: 1.2em;
+  }
+
+  .gallery {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 15px;
+  }
+
+  .gallery-item h2 {
+    font-size: 1em;
+  }
+
+  .gallery-item p {
+    font-size: 0.9em;
+  }
+}

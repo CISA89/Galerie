@@ -1,0 +1,29 @@
+// src/components/galleryData.json
+
+[
+  {
+    "id": 1,
+    "title": "Erste Galerie",
+    "description": "Dies ist die erste Galerie mit interessanten Inhalten."
+  },
+  {
+    "id": 2,
+    "title": "Zweite Galerie",
+    "description": "Hier gibt es eine zweite Galerie mit weiterführenden Details und Informationen."
+  },
+  {
+    "id": 3,
+    "title": "Dritte Galerie",
+    "description": "Dies ist die dritte Galerie, die spannende Projekte beschreibt."
+  },
+  {
+    "id": 4,
+    "title": "Vierte Galerie",
+    "description": "In dieser Galerie werden Themen zu Technologie und Innovation behandelt."
+  },
+  {
+    "id": 5,
+    "title": "Fünfte Galerie",
+    "description": "Eine Galerie über Minimalismus und nachhaltiges Leben."
+  }
+]
